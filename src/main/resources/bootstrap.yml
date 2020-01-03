@@ -1,0 +1,8 @@
+aws:
+    secretsmanager:
+        name: backend
+        prefix: /secret
+cloud:
+    aws:
+        region:
+            static: ap-southeast-1
