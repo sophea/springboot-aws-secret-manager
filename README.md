@@ -1,6 +1,9 @@
 # Getting Started
 
-This sample project demonstrates how to use AWS secret manager service with spring-boot framework as application properties configuration
+This sample project demonstrates how to use AWS secret manager service with spring-boot framework as application properties configuration.
+
+Read more : https://medium.com/@sopheamak/aws-secret-manager-service-as-application-properties-with-spring-boot-f46fe6bd44f7
+
 
 # Requirements
 1 - Java OpenJDK 1.8 to up
