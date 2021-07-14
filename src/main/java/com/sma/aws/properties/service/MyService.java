@@ -22,7 +22,7 @@ public class MyService {
     public ResponseEntity<String> test3rdService() {
         log.info("calling to the service ");
         RestTemplate template = new RestTemplate();
-        ResponseEntity<String> result = template.getForEntity("http://localhost:8080/actuator/info", String.class);
+        ResponseEntity<String> result = template.getForEntity("http://localhost:8090/actuator/health", String.class);
         //throw new RuntimeException("runtime exception");
         return result;
     }

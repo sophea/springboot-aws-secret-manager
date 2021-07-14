@@ -3,13 +3,12 @@ package com.sma.aws.properties;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.cloud.aws.autoconfigure.context.ContextStackAutoConfiguration;
 import org.springframework.core.env.Environment;
 import org.springframework.retry.annotation.EnableRetry;
 
 import java.io.PrintStream;
 @EnableRetry
-@SpringBootApplication(exclude = ContextStackAutoConfiguration.class) // avoid an exception when running at local
+@SpringBootApplication()
 public class AwsSecretPropertiesApplication {
 //    public static void main(String[] args) {
 //        SpringApplication.run(AwsSecretPropertiesApplication.class, args);

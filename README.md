@@ -7,24 +7,24 @@ Read more : https://medium.com/@sopheamak/aws-secret-manager-service-as-applicat
 
 # Requirements
 1 - Java OpenJDK 1.8 to up
-2 - Spring boot version 2x
+2 - Spring boot version 2.4.6
 3 - spring cloud framework
 
 # dependencies with spring cloud AWS
 
 pom.xml - add the following dependencies
 ````
-<dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-context</artifactId>
-      <version>2.1.0.RELEASE</version>
-</dependency>
+ <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <version>3.0.3</version>
+        </dependency>
 
-<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-aws-secrets-manager-config</artifactId>
-    <version>2.1.0.RELEASE</version>
-</dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-aws-secrets-manager-config</artifactId>
+            <version>2.2.6.RELEASE</version>
+        </dependency>
 ````
 
 Resources folder : add the bootstarp.yml properties for spring cloud aws see the following
